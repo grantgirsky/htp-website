@@ -2,12 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Hometown Profit</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <script src="https://fast.wistia.com/player.js" async></script>
     <script src="https://fast.wistia.com/embed/12ug4svgki.js" async type="module"></script>
+    <script src="https://fast.wistia.com/embed/mqyx8utoq5.js" async type="module"></script>
+    <script src="https://fast.wistia.com/embed/d03am3lxbk.js" async type="module"></script>
+    <script src="https://fast.wistia.com/embed/unpg2jch2t.js" async type="module"></script>
+    <script src="https://fast.wistia.com/embed/ox5zf8dyuj.js" async type="module"></script>
+    <script src="https://fast.wistia.com/embed/aqx9o9cwan.js" async type="module"></script>
+    <script src="https://fast.wistia.com/embed/7phhkzdjn2.js" async type="module"></script>
+    <script src="https://fast.wistia.com/embed/r2651utxfc.js" async type="module"></script>
+    <script src="https://fast.wistia.com/embed/890prrbdwg.js" async type="module"></script>
+    <script src="https://fast.wistia.com/embed/i3kyq0x5wr.js" async type="module"></script>
     <style>wistia-player[media-id='12ug4svgki']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/12ug4svgki/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style>
+    <style>wistia-player[media-id='890prrbdwg']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/890prrbdwg/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style>
+    <style>wistia-player[media-id='i3kyq0x5wr']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/i3kyq0x5wr/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style>
+    <style>wistia-player[media-id='mqyx8utoq5']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/mqyx8utoq5/swatch'); display: block; filter: blur(5px); padding-top:100.0%; }</style>
+    <style>wistia-player[media-id='d03am3lxbk']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/d03am3lxbk/swatch'); display: block; filter: blur(5px); padding-top:100.0%; }</style>
+    <style>wistia-player[media-id='unpg2jch2t']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/unpg2jch2t/swatch'); display: block; filter: blur(5px); padding-top:100.0%; }</style>
+    <style>wistia-player[media-id='ox5zf8dyuj']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/ox5zf8dyuj/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style>
+    <style>wistia-player[media-id='aqx9o9cwan']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/aqx9o9cwan/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style>
+    <style>wistia-player[media-id='7phhkzdjn2']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/7phhkzdjn2/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }</style>
+    <style>wistia-player[media-id='r2651utxfc']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/r2651utxfc/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style>
     <style>
         * {
             margin: 0;
@@ -1728,6 +1746,44 @@
         }
     </style>
     <style>wistia-player[media-id='lwk2b0wm4a']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/lwk2b0wm4a/swatch'); display: block; filter: blur(5px); padding-top:75.0%; }</style>
+    <style>
+        /* Form popup responsive styles */
+        @media (max-width: 768px) {
+            #form-popup {
+                padding: 10px 5px !important;
+            }
+            #form-popup > div {
+                width: 95% !important;
+                max-width: none !important;
+                border-radius: 8px !important;
+            }
+            #form-popup iframe {
+                height: 700px !important;
+                border-radius: 8px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            #form-popup {
+                padding: 5px !important;
+            }
+            #form-popup > div {
+                width: 98% !important;
+                border-radius: 6px !important;
+            }
+            #form-popup iframe {
+                height: 650px !important;
+                border-radius: 6px !important;
+            }
+            #form-popup button {
+                top: 10px !important;
+                right: 10px !important;
+                width: 30px !important;
+                height: 30px !important;
+                font-size: 18px !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Logo/Header -->
@@ -1746,14 +1802,14 @@
                         <wistia-player media-id="12ug4svgki" aspect="1.7777777777777777"></wistia-player>
                     </div>
                 </div>
-                <a href="#pricing" class="btn-primary hero-cta" style="margin-top: 32px;">See How It Works</a>
+                <a href="#" onclick="openForm(); return false;" class="btn-primary hero-cta" style="margin-top: 32px;">See How It Works</a>
             </div>
         </div>
     </section>
     <!-- Reality Check Section -->
     <section class="section section-realize">
         <div class="container">
-            <h2 class="section-title realize-title">💡 Here's What Most Business Owners Don't Realize</h2>
+            <h2 class="section-title realize-title">💡 What Most Business Owners Don't Realize</h2>
         
         <div class="realize-content">
             <div class="realize-paragraph primary">
@@ -1822,7 +1878,8 @@
     <section class="section testimonials-section section-cream">
         <div class="container">
             <h2 class="section-title">🗣️ What Our Clients Are Saying</h2>
-            <p class="section-subtitle">Real Business Owners. Real Results.</p>
+
+
             
             <div class="testimonial-grid-3">
                 <div class="testimonial-card">
@@ -1869,8 +1926,8 @@
                     <h3 class="service-title">CONTENT FREEDOM</h3>
                     <p class="service-tagline"><em>Perfect for busy business owners who need professional marketing but want to stay hands-on with sales</em></p>
                     <ul class="service-list">
-                        <li><span class="service-check">✓</span> We come to you monthly (only takes 1 hour)</li>
-                        <li><span class="service-check">✓</span> You get 3 months of content from each visit</li>
+                        <li><span class="service-check">✓</span> We come to you monthly (only takes 2 hours)</li>
+                        <li><span class="service-check">✓</span> You get a FULL month of content from each visit</li>
                         <li><span class="service-check">✓</span> Professional videos that actually look good</li>
                         <li><span class="service-check">✓</span> Posted automatically to Facebook & Instagram</li>
                         <li><span class="service-check">✓</span> Includes customer testimonials that build trust</li>
@@ -1884,7 +1941,7 @@
                     <h3 class="service-title">GROWTH ACCELERATOR</h3>
                     <p class="service-tagline"><em>Perfect for established businesses ready to grow beyond word-of-mouth</em></p>
                     <ul class="service-list">
-                        <li><span class="service-check">✓</span> Everything in video content PLUS:</li>
+                        <li><span class="service-check">✓</span> Everything in video 'Content Freedom' PLUS:</li>
                         <li><span class="service-check">✓</span> We create offers that make people buy</li>
                         <li><span class="service-check">✓</span> Your ads show up on Facebook & Google</li>
                         <li><span class="service-check">✓</span> Track every lead so none slip through the cracks</li>
@@ -1899,7 +1956,7 @@
                     <h3 class="service-title">COMPLETE AUTOMATION</h3>
                     <p class="service-tagline"><em>Perfect for business owners ready to step back from day-to-day marketing</em></p>
                     <ul class="service-list">
-                        <li><span class="service-check">✓</span> Everything in customer growth PLUS:</li>
+                        <li><span class="service-check">✓</span> Everything in 'Growth Accelerator' PLUS:</li>
                         <li><span class="service-check">✓</span> Automated text responses to inquiries</li>
                         <li><span class="service-check">✓</span> Follows up with leads while you sleep</li>
                         <li><span class="service-check">✓</span> Easy dashboard shows what's working</li>
@@ -1989,7 +2046,7 @@
                 <div class="testimonial-video-item"><iframe width="100%" height="260" src="https://www.youtube.com/embed/ijZ51D30pgg?si=JpP2aEyC0h1WtOpA&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             </div>
             <div style="text-align: center; margin-top: 2.8rem;">
-                <a href="#" class="btn-primary" style="background: #33493A; color: #fff; font-size: 1.13rem; font-weight: 700; border-radius: 30px; padding: 1.1rem 2.8rem; box-shadow: 0 4px 18px rgba(51,73,58,0.10); letter-spacing: 0.03em;">SCHEDULE YOUR FREE STRATEGY CALL</a>
+                <a href="#" class="btn-primary" style="background: #A46641; color: #fff; font-size: 1.13rem; font-weight: 700; border-radius: 30px; padding: 1.1rem 2.8rem; box-shadow: 0 4px 18px rgba(164,102,65,0.10); letter-spacing: 0.03em;">SCHEDULE YOUR FREE STRATEGY CALL</a>
             </div>
         </div>
     </section>
@@ -2164,17 +2221,18 @@
   <!-- Video Tabs Showcase Section -->
 <section class="video-showcase-section">
     <div class="container">
-        <h2 class="section-title">The Exact Content We'll Build For You</h2>
-        <p class="section-subtitle" style="margin-top: -2rem; margin-bottom: 2.5rem;">(Without You Doing It Yourself)</p>
+        <h2 class="section-title">Content We'll Create For You</h2>
+
         <div class="video-tabs-wrapper">
             <div class="tab-content">
                 <div id="pane-ad" class="tab-pane active">
                     <div id="splide-ad" class="splide">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><div class="video-wrapper"><div data-video-id="36639" style="aspect-ratio: 1.00000000; overflow: hidden;"><iframe width="100%" height="100%" src="https://app.vidzflow.com/v/P3wzFgTAeo?dq=576&ap=false&muted=false&loop=false&ctp=true&bv=false&piv=false&playsinline=false&bc=%234E5FFD&controls=play-large%2Cplay%2Cprogress%2Ccurrent-time%2Cmute%2Cvolume%2Csettings%2Cfullscreen" title="AD 1x1" style="aspect-ratio: 1.00000000; overflow: hidden;" frameborder="0" scrolling="no" allow="fullscreen"></iframe></div></div></li>
-                                <li class="splide__slide"><div class="video-wrapper"><div data-video-id="36639" style="aspect-ratio: 1.00000000; overflow: hidden;"><iframe width="100%" height="100%" src="https://app.vidzflow.com/v/P3wzFgTAeo?dq=576&ap=false&muted=false&loop=false&ctp=true&bv=false&piv=false&playsinline=false&bc=%234E5FFD&controls=play-large%2Cplay%2Cprogress%2Ccurrent-time%2Cmute%2Cvolume%2Csettings%2Cfullscreen" title="AD 1x1" style="aspect-ratio: 1.00000000; overflow: hidden;" frameborder="0" scrolling="no" allow="fullscreen"></iframe></div></div></li>
-                                <li class="splide__slide"><div class="video-wrapper"><div data-video-id="36639" style="aspect-ratio: 1.00000000; overflow: hidden;"><iframe width="100%" height="100%" src="https://app.vidzflow.com/v/P3wzFgTAeo?dq=576&ap=false&muted=false&loop=false&ctp=true&bv=false&piv=false&playsinline=false&bc=%234E5FFD&controls=play-large%2Cplay%2Cprogress%2Ccurrent-time%2Cmute%2Cvolume%2Csettings%2Cfullscreen" title="AD 1x1" style="aspect-ratio: 1.00000000; overflow: hidden;" frameborder="0" scrolling="no" allow="fullscreen"></iframe></div></div></li>
+
+                                <li class="splide__slide"><div class="video-wrapper"><wistia-player media-id="mqyx8utoq5" aspect="1.0"></wistia-player></div></li>
+                                <li class="splide__slide"><div class="video-wrapper"><wistia-player media-id="d03am3lxbk" aspect="1.0"></wistia-player></div></li>
+                                <li class="splide__slide"><div class="video-wrapper"><wistia-player media-id="unpg2jch2t" aspect="1.0"></wistia-player></div></li>
                             </ul>
                         </div>
                     </div>
@@ -2184,8 +2242,8 @@
                     <div id="splide-long" class="splide">
                         <div class="splide__track">
                             <ul class="splide__list">
-                               <li class="splide__slide"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/43yNlePLrHo?si=0Lc4coDWF5hxm8Qm&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></li>
-                               <li class="splide__slide"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/0B27mAvIQIE?si=AhWDw0J6yBp8AAt0&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></li>
+                               <li class="splide__slide"><div class="video-wrapper"><wistia-player media-id="890prrbdwg" aspect="1.7777777777777777"></wistia-player></div></li>
+                               <li class="splide__slide"><div class="video-wrapper"><wistia-player media-id="i3kyq0x5wr" aspect="1.7777777777777777"></wistia-player></div></li>
                             </ul>
                         </div>
                     </div>
@@ -2195,9 +2253,9 @@
                     <div id="splide-short" class="splide">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide"><div class="video-wrapper"><div data-video-id="36638" style="aspect-ratio: 0.56250000; overflow: hidden;"><iframe width="100%" height="100%" src="https://app.vidzflow.com/v/yq9GJdl7Hl?dq=576&ap=false&muted=false&loop=false&ctp=true&bv=false&piv=false&playsinline=false&bc=%234E5FFD&controls=play-large%2Cplay%2Cprogress%2Ccurrent-time%2Cmute%2Cvolume%2Csettings%2Cfullscreen" title="25-E07 9x16" style="aspect-ratio: 0.56250000; overflow: hidden;" frameborder="0" scrolling="no" allow="fullscreen"></iframe></div></div></li>
-                                <li class="splide__slide"><div class="video-wrapper"><div data-video-id="33712" style="aspect-ratio: 0.56250000; overflow: hidden;"><iframe width="100%" height="100%" src="https://app.vidzflow.com/v/y5WjzsqVHn?dq=576&ap=false&muted=false&loop=false&ctp=true&bv=false&piv=false&playsinline=false&bc=%234E5FFD&controls=play-large%2Cplay%2Cprogress%2Ccurrent-time%2Cmute%2Cvolume%2Csettings%2Cfullscreen" title="01 - Beware of Fake Florists--How to Order Directly From Us" style="aspect-ratio: 0.56250000; overflow: hidden;" frameborder="0" scrolling="no" allow="fullscreen"></iframe></div></div></li>
-                                <li class="splide__slide"><div class="video-wrapper"><div data-video-id="33709" style="aspect-ratio: 0.56250000; overflow: hidden;"><iframe width="100%" height="100%" src="https://app.vidzflow.com/v/i8yBTUWVit?dq=576&ap=false&muted=false&loop=false&ctp=true&bv=false&piv=false&playsinline=false&bc=%234E5FFD&controls=play-large%2Cplay%2Cprogress%2Ccurrent-time%2Cmute%2Cvolume%2Csettings%2Cfullscreen" title="04.30.25 - PGA Inspired Yard_9x16" style="aspect-ratio: 0.56250000; overflow: hidden;" frameborder="0" scrolling="no" allow="fullscreen"></iframe></div></div></li>
+                                <li class="splide__slide"><div class="video-wrapper"><wistia-player media-id="ox5zf8dyuj" aspect="0.5625"></wistia-player></div></li>
+                                <li class="splide__slide"><div class="video-wrapper"><wistia-player media-id="aqx9o9cwan" aspect="0.5625"></wistia-player></div></li>
+                                <li class="splide__slide"><div class="video-wrapper"><wistia-player media-id="7phhkzdjn2" aspect="0.5625"></wistia-player></div></li>
                             </ul>
                         </div>
                     </div>
@@ -2207,6 +2265,7 @@
                     <div id="splide-test" class="splide">
                         <div class="splide__track">
                             <ul class="splide__list">
+                                <li class="splide__slide"><div class="video-wrapper"><wistia-player media-id="r2651utxfc" aspect="1.7777777777777777"></wistia-player></div></li>
                                 <li class="splide__slide"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/xo7E6Es66yY?si=c9iN2DiBfOnEBqLC&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></li>
                                 <li class="splide__slide"><div class="video-wrapper"><iframe src="https://www.youtube.com/embed/ijZ51D30pgg?si=JpP2aEyC0h1WtOpA&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></li>
                             </ul>
@@ -2220,8 +2279,8 @@
                     <span class="tab-link-desc">High-impact ads for social & web.</span>
                 </a>
                 <a href="#pane-long" class="tab-link">
-                    <span class="tab-link-title">Long-form Videos</span>
-                    <span class="tab-link-desc">In-depth content for YouTube & your site.</span>
+                    <span class="tab-link-title">Showcase Videos</span>
+                    <span class="tab-link-desc">Highlight different parts of your business.</span>
                 </a>
                 <a href="#pane-short" class="tab-link">
                     <span class="tab-link-title">Short-form Clips</span>
@@ -2319,19 +2378,19 @@
      }
      .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
      
-     /* Specific styling for Ad Videos section to match button height and 1:1 aspect ratio */
+     /* Specific styling for Ad Videos section - Desktop uses fixed height, Mobile uses responsive */
      #pane-ad .video-wrapper {
          padding-bottom: 0;
-         height: 450px; /* Match approximate height of the 4 category buttons */
+         height: 450px; /* Fixed height for desktop to match original layout */
          aspect-ratio: 1 / 1;
      }
      
      /* Mobile-specific styling for Ad Videos section */
      @media (max-width: 991px) {
          #pane-ad .video-wrapper {
-             height: 300px; /* Smaller on mobile to fit better with category buttons */
-             aspect-ratio: 1 / 1;
-             max-width: 300px;
+             padding-bottom: 100%; /* Responsive square ratio on mobile */
+             height: 0;
+             max-width: 100%; /* Use full width on mobile like other videos */
              margin: 0 auto;
          }
      }
@@ -2529,7 +2588,7 @@
                             991: {
                                 gap: '0rem',
                                 peek: 0,
-                                rewind: false,
+                                rewind: true,
                             },
                         },
                     }).mount();
@@ -2696,6 +2755,88 @@
         });
         // On page load, fade in the first tab's cards
         fadeInCards(carousels['ad']);
+
+        // Form popup functionality
+        function openFormPopup() {
+            console.log('Opening form popup...');
+            
+            // Try ConvertFlow API first
+            if (window.ConvertFlow && window.ConvertFlow.openPopup) {
+                console.log('Using ConvertFlow API');
+                window.ConvertFlow.openPopup('w5jKYyiW1WnKOzoIvh38');
+                return;
+            }
+            
+            // Fallback: show overlay
+            const overlay = document.getElementById('form-overlay');
+            if (overlay) {
+                console.log('Using overlay fallback');
+                overlay.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            } else {
+                console.log('Overlay not found');
+            }
+        }
+
+        function closeFormPopup() {
+            console.log('Closing form popup...');
+            const overlay = document.getElementById('form-overlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+        }
+
+        // Add click event listeners to all buttons
+        function setupFormButtons() {
+            console.log('Setting up form buttons...');
+            const formButtons = document.querySelectorAll('.btn-primary, .btn-secondary');
+            console.log('Found buttons:', formButtons.length);
+            
+            formButtons.forEach((button, index) => {
+                console.log(`Setting up button ${index + 1}:`, button.textContent);
+                
+                // Remove any existing click listeners
+                button.removeEventListener('click', handleButtonClick);
+                
+                // Add new click listener
+                button.addEventListener('click', handleButtonClick);
+            });
+
+            // Setup close button
+            const closeButton = document.getElementById('close-form');
+            if (closeButton) {
+                closeButton.addEventListener('click', closeFormPopup);
+            }
+
+            // Close on overlay click
+            const overlay = document.getElementById('form-overlay');
+            if (overlay) {
+                overlay.addEventListener('click', function(e) {
+                    if (e.target === overlay) {
+                        closeFormPopup();
+                    }
+                });
+            }
+        }
+
+        function handleButtonClick(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Button clicked:', this.textContent);
+            openFormPopup();
+        }
+
+        // Setup buttons when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', setupFormButtons);
+        } else {
+            setupFormButtons();
+        }
+
+        // Also setup buttons after a short delay to ensure ConvertFlow is loaded
+        setTimeout(setupFormButtons, 1000);
+        setTimeout(setupFormButtons, 3000);
     </script>
 
     <!-- FAQ Section -->
@@ -2735,7 +2876,7 @@
             <p style="font-size: 1.1rem; margin-bottom: 3rem; opacity: 0.9;">If you're ready to remove overwhelm, gain clarity, and start scaling predictably, we're here to guide you every step of the way.</p>
             <div class="cta-buttons">
                 <a href="#" class="btn-primary">Book Your Strategy Call</a>
-                <a href="#" class="btn-secondary">Learn More About Our Process</a>
+                <a href="#" id="learn-more-btn" class="btn-secondary">Learn More About Our Process</a>
             </div>
         </div>
     </section>
@@ -2743,21 +2884,24 @@
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const logos = [
-            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6734aca4e9210290bc34ce66.jpeg',
+            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/685be1cf4669a99e2676c303.png',
             'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718e24a142c9f3592c3ba45.png',
-            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718e2033b2a837fde1ec157.jpeg',
+            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/685bde3616314d167aa081ba.png',
             'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718e1ce28f9aaca628aa7ce.png',
             'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718e0b00ca4c68073c43b91.png',
             'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718df6f623022d18951f010.png',
             'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718e06fb996ff0de5033114.png',
             'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718df34623022c34d51e8c1.png',
-            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718df1128f9aab14a8a74d8.webp',
-            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718e00397d19a07a1d69767.jpeg',
-            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718e03f6230224c0651f0ae.svg',
-            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718deeb28f9aa524b8a74af.png',
-            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718dfd797d19a0ef7d6974e.jpeg',
+            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/685bd7eeb0a31b81fea661e4.png',
+            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/685be0a0e581e0e920345aed.png',
+            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/685be364e581e0bf10345d0c.png',
+            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/685be01ccaca58fd6822868d.png',
+            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/685bdd85caca582a98228130.webp',
             'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718e1193b2a8340401eb289.png',
-            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/6718e29097d19ab824d6a7c0.webp'
+            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/685bd70cf90bf975f8185a45.png',
+            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/685bdbf416314d0b31a07cc5.png',
+            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/685be2a0caca586519228b69.png',
+            'https://storage.googleapis.com/msgsndr/5wS24A6WGyyQ8jimTAWs/media/685be58616314d4247a08b4b.png',
         ];
 
         const track1 = document.getElementById('logo-track-1');
@@ -2782,6 +2926,135 @@
             track2.appendChild(div);
         });
     });
+    </script>
+
+    <!-- Form Popup -->
+    <div id="form-overlay" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.8);z-index:9999;overflow-y:auto;">
+        <div id="form-container" style="position:relative;width:95%;max-width:600px;max-height:90vh;margin:5vh auto;background:#fff;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.4);overflow:auto;">
+            <button id="close-form" style="position:absolute;top:10px;right:10px;background:#333;color:#fff;border:none;border-radius:50%;width:35px;height:35px;font-size:20px;cursor:pointer;z-index:2;">×</button>
+            <iframe
+                src="https://updates.hometownprofit.com/widget/form/oAIQc4oAzWGn8L9uPx3F"
+                style="width:100%;height:1400px;border:none;display:block;"
+                id="popup-oAIQc4oAzWGn8L9uPx3F"
+                data-form-id="oAIQc4oAzWGn8L9uPx3F"
+                title="Landing Page Form - HTP MAIN SITE 6/24/25"
+            ></iframe>
+        </div>
+    </div>
+    <script src="https://updates.hometownprofit.com/js/form_embed.js"></script>
+
+    <script>
+        // Simplified open/close for embedded modal
+        function openFormPopup() {
+            const overlay = document.getElementById('form-overlay');
+            if (overlay) {
+                overlay.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeFormPopup() {
+            const overlay = document.getElementById('form-overlay');
+            if (overlay) {
+                overlay.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Attach openFormPopup to all buttons
+        function setupFormButtons() {
+            const buttons = document.querySelectorAll('.btn-primary, .btn-secondary');
+            buttons.forEach(btn => {
+                if (btn.id === 'learn-more-btn') return; // skip video button for form popup
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    openFormPopup();
+                });
+            });
+
+            // Close button
+            const closeBtn = document.getElementById('close-form');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', closeFormPopup);
+            }
+
+            // Close when clicking outside container
+            const overlay = document.getElementById('form-overlay');
+            if (overlay) {
+                overlay.addEventListener('click', function(e) {
+                    if (e.target === overlay) {
+                        closeFormPopup();
+                    }
+                });
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', setupFormButtons);
+        } else {
+            setupFormButtons();
+        }
+    </script>
+    <!-- Remove previous window.open approach by deleting or commenting out that script -->
+
+    <!-- Alias for legacy inline onclick="openForm()" attributes -->
+    <script>
+    function openForm() {
+        openFormPopup();
+    }
+    </script>
+
+    <!-- Video Popup -->
+    <div id="video-overlay" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.8);z-index:9999;overflow-y:auto;">
+        <div id="video-container" style="position:relative;width:95%;max-width:800px;margin:5vh auto;background:#000;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.4);">
+            <button id="close-video" style="position:absolute;top:10px;right:10px;background:#fff;border:none;border-radius:50%;width:35px;height:35px;font-size:20px;cursor:pointer;z-index:2;">×</button>
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;">
+                <iframe src="https://www.youtube.com/embed/snoqajiARtQ?si=EcHh2ddVg444q59v" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Popup open/close script -->
+    <script>
+        function openVideoPopup() {
+            const vOverlay = document.getElementById('video-overlay');
+            if (vOverlay) {
+                vOverlay.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeVideoPopup() {
+            const vOverlay = document.getElementById('video-overlay');
+            if (vOverlay) {
+                vOverlay.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoBtn = document.getElementById('learn-more-btn');
+            if (videoBtn) {
+                videoBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    openVideoPopup();
+                });
+            }
+
+            const closeVideoBtn = document.getElementById('close-video');
+            if (closeVideoBtn) {
+                closeVideoBtn.addEventListener('click', closeVideoPopup);
+            }
+
+            const vOverlay = document.getElementById('video-overlay');
+            if (vOverlay) {
+                vOverlay.addEventListener('click', function(e) {
+                    if (e.target === vOverlay) {
+                        closeVideoPopup();
+                    }
+                });
+            }
+        });
     </script>
 </body>
 </html> 
